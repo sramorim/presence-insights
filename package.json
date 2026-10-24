@@ -1,0 +1,14 @@
+{
+  "name": "ecossistema-amorim",
+  "private": true,
+  "type": "module",
+  "description": "ARF (Amorim Registry File) e árvore de acesso do ecossistema Sr. Amorim, servidos por um Cloudflare Worker.",
+  "scripts": {
+    "build": "esbuild src/worker.js --bundle --format=esm --platform=neutral --outfile=dist/worker.js",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}

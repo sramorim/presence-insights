@@ -1,0 +1,8 @@
+name = "ecossistema-amorim"
+main = "dist/worker.js"
+compatibility_date = "2025-01-01"
+# A conta vem de CLOUDFLARE_ACCOUNT_ID (CI) ou do `wrangler login`.
+routes = [{ pattern = "ecossistema.senhoramorim.com.br", custom_domain = true }]
+
+[build]
+command = "npm run build"

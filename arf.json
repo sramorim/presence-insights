@@ -1,0 +1,159 @@
+{
+  "$comentario": "ARF — Amorim Registry File. A ficha de cada projeto do ecossistema Sr. Amorim. Levantado do código dos repositórios, da conta Cloudflare e dos endereços no ar em 2026-10-24. 'pronto' não é estimativa: é a contagem da lista 'checklist' (5 itens, 20% cada). 'plano' é a sugestão de acesso; quem decide é o dono.",
+  "versao": 1,
+  "atualizado": "2026-10-24",
+  "planos": ["free", "pro", "admin"],
+  "etapas": {
+    "no-ar": "No ar",
+    "construcao": "Em construção",
+    "parado": "Parado",
+    "ideia": "Ideia"
+  },
+  "categorias": {
+    "hub": "Hub e entrada",
+    "osint-inteligencia": "OSINT & Inteligência",
+    "redes-sociais": "Redes Sociais",
+    "ferramentas-mobile": "Ferramentas Mobile",
+    "ias-agentes": "IAs & Agentes"
+  },
+  "checklist": {
+    "codigo": "Tem código num repositório",
+    "publicado": "Responde no ar",
+    "dominio": "Tem endereço próprio senhoramorim.com.br",
+    "testes": "Tem testes automáticos",
+    "ci": "Tem verificação ou publicação automática (GitHub Actions)"
+  },
+  "projetos": [
+    {
+      "id": "central-amorim",
+      "nome": "Central Amorim",
+      "dor": "A porta de entrada da marca: quem chega por um link vê quem é o Sr. Amorim e entra no Portal com um toque.",
+      "stack": ["Vite", "Cloudflare Workers", "D1"],
+      "categoria": "hub",
+      "plano": "free",
+      "etapa": "no-ar",
+      "url": "https://senhoramorim.com.br",
+      "repo": "sramorim/central-amorim",
+      "hospedagem": "Cloudflare Workers",
+      "checklist": { "codigo": true, "publicado": true, "dominio": true, "testes": true, "ci": true }
+    },
+    {
+      "id": "portal-amorim",
+      "nome": "Portal Amorim",
+      "dor": "Reúne num só lugar os projetos, as categorias e as ferramentas do ecossistema, com painel admin privado.",
+      "stack": ["Vite", "Cloudflare Workers", "D1"],
+      "categoria": "hub",
+      "plano": "free",
+      "etapa": "no-ar",
+      "url": "https://portal.senhoramorim.com.br",
+      "repo": "sramorim/portal-amorim",
+      "hospedagem": "Cloudflare Workers",
+      "checklist": { "codigo": true, "publicado": true, "dominio": true, "testes": true, "ci": true }
+    },
+    {
+      "id": "argos",
+      "nome": "ARGOS",
+      "dor": "Investigação em fontes públicas com a origem de cada dado: usuário, e-mail, telefone, domínio e redes, sem resultado inventado.",
+      "stack": ["React", "Vite", "Node.js", "SQLite"],
+      "categoria": "osint-inteligencia",
+      "plano": "free",
+      "etapa": "no-ar",
+      "url": "https://argos.senhoramorim.com.br",
+      "repo": "sramorim/argus",
+      "hospedagem": "Render",
+      "checklist": { "codigo": true, "publicado": true, "dominio": true, "testes": true, "ci": true }
+    },
+    {
+      "id": "shandon-elite",
+      "nome": "Shandon Elite",
+      "dor": "Plataforma OSINT profissional para investigação avançada, com app Android e bot no Telegram.",
+      "stack": ["Next.js", "Cloudflare Workers", "Capacitor", "Python"],
+      "categoria": "osint-inteligencia",
+      "plano": "pro",
+      "etapa": "no-ar",
+      "url": "https://elite.senhoramorim.com.br",
+      "repo": "sramorim/shandon-elite",
+      "hospedagem": "Render + Cloudflare",
+      "checklist": { "codigo": true, "publicado": true, "dominio": true, "testes": true, "ci": true }
+    },
+    {
+      "id": "amorim-osint",
+      "nome": "Amorim OSINT",
+      "dor": "Caminhos e fontes abertas para investigação digital.",
+      "stack": ["Cloudflare Workers"],
+      "categoria": "osint-inteligencia",
+      "plano": "free",
+      "etapa": "no-ar",
+      "url": "https://osint.senhoramorim.com.br",
+      "repo": null,
+      "hospedagem": "Cloudflare Workers",
+      "alerta": "O código só existe na Cloudflare; nenhum repositório guarda uma cópia.",
+      "checklist": { "codigo": false, "publicado": true, "dominio": true, "testes": false, "ci": false }
+    },
+    {
+      "id": "reverse-intelligence",
+      "nome": "REVERSE INTELLIGENCE",
+      "dor": "Explica como um aplicativo Android foi feito: bibliotecas, telas, API e avisos de segurança, a partir do APK.",
+      "stack": ["Node.js", "TypeScript"],
+      "categoria": "ferramentas-mobile",
+      "plano": "pro",
+      "etapa": "construcao",
+      "url": null,
+      "repo": "sramorim/REVERSE-INTELLIGENCE",
+      "hospedagem": null,
+      "checklist": { "codigo": true, "publicado": false, "dominio": false, "testes": true, "ci": false }
+    },
+    {
+      "id": "gram-analyzer",
+      "nome": "Gram Analyzer",
+      "dor": "Análise de Instagram: quem começou a seguir, quem deixou de seguir e engajamento.",
+      "stack": ["Next.js", "FastAPI", "Capacitor"],
+      "categoria": "redes-sociais",
+      "plano": "pro",
+      "etapa": "parado",
+      "url": null,
+      "repo": "sramorim/Gram-Analyzer",
+      "hospedagem": null,
+      "checklist": { "codigo": true, "publicado": false, "dominio": false, "testes": false, "ci": false }
+    },
+    {
+      "id": "sentinela",
+      "nome": "Sentinela",
+      "dor": "Análise e recuperação de conversas do WhatsApp.",
+      "stack": [],
+      "categoria": "redes-sociais",
+      "plano": "pro",
+      "etapa": "ideia",
+      "url": null,
+      "repo": null,
+      "hospedagem": null,
+      "checklist": { "codigo": false, "publicado": false, "dominio": false, "testes": false, "ci": false }
+    },
+    {
+      "id": "presence-insights",
+      "nome": "Presence Insights",
+      "dor": "Monitoramento de presença e perfis. Este repositório passou a guardar o ARF do ecossistema.",
+      "stack": [],
+      "categoria": "redes-sociais",
+      "plano": "free",
+      "etapa": "ideia",
+      "url": null,
+      "repo": "sramorim/presence-insights",
+      "hospedagem": null,
+      "checklist": { "codigo": false, "publicado": false, "dominio": false, "testes": false, "ci": false }
+    },
+    {
+      "id": "central-operacional-ia",
+      "nome": "Central Operacional IA",
+      "dor": "Operação interna com IA (Menes). Fora deste levantamento a pedido do dono.",
+      "stack": [],
+      "categoria": "ias-agentes",
+      "plano": "admin",
+      "etapa": "ideia",
+      "url": null,
+      "repo": null,
+      "hospedagem": null,
+      "checklist": { "codigo": false, "publicado": false, "dominio": false, "testes": false, "ci": false }
+    }
+  ]
+}
